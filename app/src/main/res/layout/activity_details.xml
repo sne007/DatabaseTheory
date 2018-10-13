@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Details">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/closure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:animationDuration="300"
+                app:expandOnClick="true"
+                app:icon="@drawable/ic_launcher_background"
+                app:inner_view="@layout/mycustomview"
+                app:startExpanded="false"
+                app:title="Closure"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="110dp" />
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/minimal_basis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:animationDuration="300"
+                app:expandOnClick="true"
+                app:icon="@drawable/ic_launcher_background"
+                app:inner_view="@layout/mycustomview"
+                app:startExpanded="false"
+                app:title="Minimal basis"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="110dp" />
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/keys"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:animationDuration="300"
+                app:expandOnClick="true"
+                app:icon="@drawable/ic_launcher_background"
+                app:inner_view="@layout/mycustomview"
+                app:startExpanded="false"
+                app:title="keys"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="110dp" />
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/violate_3NF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:animationDuration="300"
+                app:expandOnClick="true"
+                app:icon="@drawable/ic_launcher_background"
+                app:inner_view="@layout/mycustomview"
+                app:startExpanded="false"
+                app:title="3NF violations"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="110dp" />
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/violate_BCNF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:animationDuration="300"
+                app:expandOnClick="true"
+                app:icon="@drawable/ic_launcher_background"
+                app:inner_view="@layout/mycustomview"
+                app:startExpanded="false"
+                app:title="BCNF Violations"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="110dp" />
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/decompose_BCNF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:animationDuration="300"
+                app:expandOnClick="true"
+                app:icon="@drawable/ic_launcher_background"
+                app:inner_view="@layout/mycustomview"
+                app:startExpanded="false"
+                app:title="Decompose into BCNF"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="110dp" />
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/decompose_3NF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:animationDuration="300"
+                app:expandOnClick="true"
+                app:icon="@drawable/ic_launcher_background"
+                app:inner_view="@layout/mycustomview"
+                app:startExpanded="false"
+                app:title="Decompose into 3NF"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="110dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.v7.widget.LinearLayoutCompat>
