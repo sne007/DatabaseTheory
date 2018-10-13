@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <com.github.florent37.materialtextfield.MaterialTextField
         android:id="@+id/materialTextField2"
         android:layout_width="300dp"
@@ -19,7 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialTextField"
-        app:layout_constraintVertical_bias="0.129"
+        app:layout_constraintVertical_bias="0.081"
         app:mtf_image="@drawable/ic_launcher_background"
         app:mtf_labelColor="#666">
 
@@ -46,7 +47,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.118"
+        app:layout_constraintVertical_bias="0.060000002"
         app:mtf_image="@drawable/ic_launcher_background"
         app:mtf_labelColor="#666">
 
@@ -60,6 +61,7 @@
     </com.github.florent37.materialtextfield.MaterialTextField>
 
     <TableLayout
+        android:id="@+id/tableLayout2"
         android:layout_width="368dp"
         android:layout_height="216dp"
         android:layout_marginStart="8dp"
@@ -71,7 +73,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialTextField2">
+        app:layout_constraintTop_toBottomOf="@+id/materialTextField2"
+        app:layout_constraintVertical_bias="0.3">
 
         <TableRow
             android:layout_width="match_parent"
@@ -79,65 +82,31 @@
             android:layout_weight="1">
 
             <Button
-                android:id="@+id/button1"
-                android:backgroundTint="#FFFFFF"
-                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/buttonA"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="A" />
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:text="A"
+                android:textColor="@color/colorPrimaryDark" />
 
             <Button
-                android:id="@+id/button2"
-                android:backgroundTint="#FFFFFF"
-                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/buttonB"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="B" />
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:text="B"
+                android:textColor="@color/colorPrimaryDark" />
 
             <Button
-                android:id="@+id/button3"
-                android:backgroundTint="#FFFFFF"
-                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/buttonC"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="C" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
-
-            <Button
-                android:id="@+id/buttond"
+                android:layout_weight="1"
                 android:backgroundTint="#FFFFFF"
-                android:textColor="@color/colorPrimaryDark"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="A" />
-
-            <Button
-                android:id="@+id/buttone"
-                android:backgroundTint="#FFFFFF"
-                android:textColor="@color/colorPrimaryDark"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="B" />
-
-            <Button
-                android:id="@+id/buttonf"
-                android:backgroundTint="#FFFFFF"
-                android:textColor="@color/colorPrimaryDark"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="C" />
+                android:text="C"
+                android:textColor="@color/colorPrimaryDark" />
 
         </TableRow>
 
@@ -147,53 +116,86 @@
             android:layout_weight="1">
 
             <Button
-                android:id="@+id/buttonj"
-                android:backgroundTint="#FFFFFF"
-                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/buttonD"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="A" />
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:text="A"
+                android:textColor="@color/colorPrimaryDark" />
 
             <Button
-                android:id="@+id/buttong"
-                android:backgroundTint="#FFFFFF"
-                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/buttonE"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="B" />
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:text="B"
+                android:textColor="@color/colorPrimaryDark" />
 
             <Button
-                android:id="@+id/buttonh"
-                android:backgroundTint="#FFFFFF"
-                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/buttonF"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="C" />
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:text="C"
+                android:textColor="@color/colorPrimaryDark" />
 
         </TableRow>
 
         <TableRow
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
 
             <Button
-                android:id="@+id/buttonGo"
-                android:layout_weight="1"
-                android:backgroundTint="@color/colorPrimaryDark"
-                android:textColor="#FFFFFF"
-                android:shadowRadius="30dp"
-                android:layout_width="match_parent"
-                android:layout_marginLeft="80dp"
-                android:layout_marginRight="80dp"
+                android:id="@+id/buttonSemiColon"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="GO!" />
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:text=";"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <Button
+                android:id="@+id/buttonFd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:text="-->"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <Button
+                android:id="@+id/buttonComma"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:text=","
+                android:textColor="@color/colorPrimaryDark" />
 
         </TableRow>
-
     </TableLayout>
+
+    <Button
+        android:id="@+id/buttonGo"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Go!"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2"
+        app:layout_constraintVertical_bias="0.35000002" />
 
 </android.support.constraint.ConstraintLayout>
