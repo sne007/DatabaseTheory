@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Database_theory</string>
+    <string name="attributes_ex_a_b_c">Attributes: Ex: A,B,C</string>
+    <string name="comma">,</string>
+    <string name="fds_ex_a_b_b_c"><![CDATA[FDs EX: A-->B;B-->C;]]></string>
+    <string name="go">Go!</string>
+    <string name="d">D</string>
+    <string name="e">E</string>
+    <string name="f">F</string>
+    <string name="c">C</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="semiColon">;</string>
+    <string name="FdSymbol"><![CDATA[-->]]></string>
 </resources>

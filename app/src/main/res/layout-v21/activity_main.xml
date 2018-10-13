@@ -148,7 +148,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="#FFFFFF"
                 android:text="@string/f"
-                android:textColor="@color/colorPrimaryDark" tools:targetApi="lollipop" />
+                android:textColor="@color/colorPrimaryDark" />
 
         </TableRow>
 
@@ -164,7 +164,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="#FFFFFF"
                 android:text="@string/semiColon"
-                android:textColor="@color/colorPrimaryDark" tools:targetApi="lollipop"/>
+                android:textColor="@color/colorPrimaryDark" />
 
             <Button
                 android:id="@+id/buttonFd"
@@ -172,8 +172,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:backgroundTint="#FFFFFF"
-                android:text="@string/FdSymbol"
-                android:textColor="@color/colorPrimaryDark" tools:targetApi="lollipop"/>
+                android:text="-->"
+                android:textColor="@color/colorPrimaryDark" />
 
             <Button
                 android:id="@+id/buttonComma"
