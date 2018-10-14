@@ -6,8 +6,10 @@ import android.icu.text.IDNA;
 import android.icu.text.IDNA.Info;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
@@ -25,11 +27,14 @@ import static android.widget.Toast.makeText;
 
 public class MainActivity extends AppCompatActivity {
 
+    private View parent_view;
     String attr,fds;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        parent_view = findViewById(android.R.id.content);
+
         EditText ett = findViewById(R.id.materialTextFieldRelation);
         final Button a = findViewById(R.id.buttonA);
         final Button b = findViewById(R.id.buttonB);
@@ -68,16 +73,30 @@ public class MainActivity extends AppCompatActivity {
         semi.setOnClickListener(cl);
         fd.setOnClickListener(cl);
         comma.setOnClickListener(cl);
-        Set<Attribute> attrs = Attribute.getSet(et.getText().toString());
-        final Set<FuncDep> fdSet = FuncDep.getSet(et1.getText().toString());
 
         Button go = findViewById(R.id.buttonGo);
+
         go.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 attr = et.getText().toString();
                 fds = et1.getText().toString();
-                startActivity(new Intent(MainActivity.this, Details.class).putExtra("details",attr + "#" + fds));
+                try {
+                    final Set<Attribute> attrs = Attribute.getSet(attr);
+                    final Set<FuncDep> fdset = FuncDep.getSet(fds);
+                    Algos.closure(attrs,fdset);
+                    Algos.keys(attrs,fdset);
+                    Algos.check3NF(attrs,fdset);
+                    Algos.checkBCNF(attrs,fdset);
+                    Algos.minimalBasis(fdset);
+                    Relation rel = new Relation(attrs, fdset);
+                    rel.decomposeToBCNF();
+                    rel.decomposeTo3NF();
+                    startActivity(new Intent(MainActivity.this, Details.class).putExtra("details",attr + "#" + fds));
+                }
+                catch (Exception e){
+                    Snackbar.make(parent_view, "Recheck the correctness of attributes and FDs", Snackbar.LENGTH_LONG).show();
+                }
             }
         });
     }
